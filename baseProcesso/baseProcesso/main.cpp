@@ -19,5 +19,6 @@ int main()
         int num_aleatorio = distrib(gen);
         sistema.criarProcesso("Pronto", num_aleatorio);
     }
+
     sistema.exibirProcessos();
 }

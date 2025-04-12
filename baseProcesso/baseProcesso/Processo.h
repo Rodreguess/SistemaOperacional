@@ -9,14 +9,14 @@ private:
     string estado_do_processo;
     int prioridade;
 public:
-    Processo() {}; // construtor padrao
-    void setPID(int p) { pid = p; }
-    void setEstado(string e) { estado_do_processo = e; }
-    void setPrioridade(int prio) { prioridade = prio; }
+    Processo(); // construtor padrao
+    void setPID(int p);
+    void setEstado(string e);
+    void setPrioridade(int prio);
 
-    int getPID() { return pid; }
-    string getEstado() { return estado_do_processo; }
-    int getPrioridade() { return prioridade; }
+    int getPID();
+    string getEstado();
+    int getPrioridade();
 };
 
 #endif // !PROCESSO_HPP

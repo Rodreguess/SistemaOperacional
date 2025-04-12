@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|solutionrelative:baseProcesso\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Kernel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|solutionrelative:baseProcesso\\Kernel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Processo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|solutionrelative:baseProcesso\\Processo.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Processo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|solutionrelative:baseProcesso\\Processo.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Kernel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|solutionrelative:baseProcesso\\Kernel.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|solutionrelative:baseProcesso\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C7F29DE1-78D6-4052-A886-EE13A20B75DC}|baseProcesso\\baseProcesso.vcxproj|C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Kernel.h||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
@@ -30,17 +30,17 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "main.cpp",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\main.cpp",
               "RelativeDocumentMoniker": "baseProcesso\\main.cpp",
               "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\main.cpp",
               "RelativeToolTip": "baseProcesso\\main.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABMAAAA3AAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-03-16T15:30:16.879Z",
               "IsPinned": true,
@@ -48,39 +48,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Kernel.cpp",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Kernel.cpp",
               "RelativeDocumentMoniker": "baseProcesso\\Kernel.cpp",
               "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Kernel.cpp",
               "RelativeToolTip": "baseProcesso\\Kernel.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAcAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAWAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-05T19:49:21.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "Processo.h",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Processo.h",
               "RelativeDocumentMoniker": "baseProcesso\\Processo.h",
               "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Processo.h",
               "RelativeToolTip": "baseProcesso\\Processo.h",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAMAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABUAAAAXAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000680|",
               "WhenOpened": "2025-04-05T18:02:35.552Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "Processo.cpp",
               "DocumentMoniker": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Processo.cpp",
               "RelativeDocumentMoniker": "baseProcesso\\Processo.cpp",
               "ToolTip": "C:\\Users\\gabri\\OneDrive\\Documentos\\Faculdade\\SistemasOperacionais\\baseProcesso\\baseProcesso\\Processo.cpp",
               "RelativeToolTip": "baseProcesso\\Processo.cpp",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAmAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-04-05T19:11:05.97Z",
               "EditorCaption": ""

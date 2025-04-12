@@ -10,8 +10,7 @@ private:
 public:
     Kernel(); // construtor
     void criarProcesso(string estado, int prioridade);
-    // exibindo os processos criados
     void exibirProcessos();
 
 };
-#endif // !KERNEL_HPP
+#endif

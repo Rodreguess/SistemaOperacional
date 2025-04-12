@@ -8,5 +8,8 @@ using namespace std;
 #include <string>
 #include <vector>
 #include <random>
+#include <thread>
+#include <chrono>
+#include <queue>
 
 #endif // !INCLUDES_HPP
