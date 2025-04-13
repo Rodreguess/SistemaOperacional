@@ -128,11 +128,13 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Escalonador.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Processo.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Escalonador.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Kernel.h" />
     <ClInclude Include="Processo.h" />

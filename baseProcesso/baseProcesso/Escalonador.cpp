@@ -1,18 +1,31 @@
 #include "Escalonador.h"
 
+Escalonador::Escalonador() {
+
+}
+
 void Escalonador::adicionarProcesso(Processo& p) {
     fila.push(p);
 }
 
-void Escalonador::executar() {
+vector<Processo> Escalonador::executar() {
+    vector<Processo> novoProcesso;
     while (!fila.empty()) {
         Processo atual = fila.front();
         fila.pop();
 
-        std::cout << "Executando processo PID: " << atual.getPID()
-            << " | Estado: " << atual.getEstado()
-            << " | Prioridade: " << atual.getPrioridade() << "s" << std::endl;
+        cout << "Executando processo PID: " << atual.getPID()
+            << " | Prioridade: " << atual.getPrioridade() << endl;
 
-        std::cout << "Processo " << atual.getPID() << " finalizado.\n" << std::endl;
+        cout << "Processo " << atual.getPID() << " finalizado.\n" << endl;
+
+        novoProcesso.push_back(atual);
     }
+
+    for (int i = 0; i < novoProcesso.size(); i++)
+    {
+        novoProcesso[i].setEstado("Finalizado");
+    }
+
+    return novoProcesso;
 }

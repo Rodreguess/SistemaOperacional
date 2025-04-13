@@ -5,12 +5,12 @@
 
 class Escalonador {
 private:
-    std::queue<Processo> fila;
+    std::queue<Processo> fila; //minha fila de processos, ordenada de acordo com a prioridade do processo
 
 public:
     Escalonador();
     void adicionarProcesso(Processo& p);
-    void executar();
+    vector<Processo> executar();
 };
 
 #endif
