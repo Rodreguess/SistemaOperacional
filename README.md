@@ -1,4 +1,5 @@
 🖥️ SistemaOperacional
+
 💻 Projeto de Simulação de Sistema Operacional
 Este projeto simula o funcionamento básico de um Sistema Operacional utilizando a linguagem C++. O objetivo é compreender e aplicar conceitos fundamentais do gerenciamento de processos e do kernel de um sistema operacional real.
 
