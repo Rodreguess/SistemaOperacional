@@ -131,12 +131,14 @@
     <ClCompile Include="Escalonador.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="Memoria.cpp" />
     <ClCompile Include="Processo.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Escalonador.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Kernel.h" />
+    <ClInclude Include="Memoria.h" />
     <ClInclude Include="Processo.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

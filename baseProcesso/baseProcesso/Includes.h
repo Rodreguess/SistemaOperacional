@@ -11,5 +11,8 @@ using namespace std;
 #include <thread>
 #include <chrono>
 #include <queue>
+#include <map>
+#include <algorithm>
+#include <functional>
 
 #endif // !INCLUDES_HPP

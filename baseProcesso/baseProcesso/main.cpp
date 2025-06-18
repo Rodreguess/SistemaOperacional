@@ -1,45 +1,42 @@
-#include "Includes.h"
-#include "Kernel.h"
+// main.cpp
 
-bool compararPorPrioridade(Processo& a, Processo& b) {
-    if (a.getPrioridade() == b.getPrioridade()) {
-        return a.getPID() < b.getPID(); // desempate pelo PID
-    }
-    return a.getPrioridade() < b.getPrioridade();
-}
+#include "Includes.h"
+#include "Kernel.h" // Inclua apenas o Kernel, que já inclui o resto
 
 int main()
 {
-    // simula prioridades a partir de um numero gerado aleatoriamente para cada processo
+    // Simula prioridades, tempo de CPU e memória
     random_device semente_aleatoria;
     mt19937 gen(semente_aleatoria());
-    uniform_int_distribution<> distrib(1, 5);
+    uniform_int_distribution<> distrib_prioridade(1, 4);   // Prioridade de 1 a 4
+    uniform_int_distribution<> distrib_tempo_cpu(5, 20);    // Tempo de CPU necessário (5 a 20 unidades)
+    uniform_int_distribution<> distrib_memoria_kb(10, 100); // Memória em KB (10 a 100 KB)
 
-    Kernel sistema;
+    // Defina o tamanho total da memória do seu SO simulado
+     int MEMORIA_TOTAL_SO_KB = 1024; // Exemplo: 1MB de memória total
+
+    Kernel sistema(MEMORIA_TOTAL_SO_KB); // Cria o Kernel, inicializando a memória
+
     int numero_de_processos;
-
-    cout << "Numero de processo: " << endl;
+    cout << "Numero de processos a criar: ";
     cin >> numero_de_processos;
 
-    for (int i = 0; i <= numero_de_processos-1; i++)
-    {
-        int num_aleatorio = distrib(gen);
-        sistema.criarProcesso("Pronto", num_aleatorio);
+    for (int i = 0; i < numero_de_processos; ++i) {
+        int prio_aleatoria = distrib_prioridade(gen);
+        int tempo_cpu_aleatorio = distrib_tempo_cpu(gen);
+        int memoria_aleatoria = distrib_memoria_kb(gen);
+
+        sistema.criarProcesso(prio_aleatoria, tempo_cpu_aleatorio, memoria_aleatoria);
     }
 
-    cout << numero_de_processos << " Processos criados com sucesso!!" << endl << endl;
+    cout << "\nTodos os processos foram criados e encaminhados ao Kernel." << endl;
 
-    // ordena os processo de acordo com sua prioridade
-    vector<Processo> processos = sistema.getListaProcessos();
-    sort(processos.begin(), processos.end(), compararPorPrioridade);
+    // O Kernel agora é responsável por iniciar a simulação
+    sistema.iniciarSimulacao();
 
-    vector<Processo> finalizados;
-    for (int i = 0; i < processos.size(); i++) {
-        vector<Processo> resultado = sistema.executaFIFO(processos[i]);
+    cout << "\nPressione qualquer tecla para fechar esta janela...";
+    cin.ignore(); // Limpa o buffer do cin
+    cin.get();    // Espera por uma tecla
 
-        // adiciona todos os processos retornados ao vetor finalizados
-        finalizados.insert(finalizados.end(), resultado.begin(), resultado.end());
-    }
-
-    sistema.exibirProcessos(finalizados);
+    return 0;
 }
