@@ -14,5 +14,6 @@ using namespace std;
 #include <map>
 #include <algorithm>
 #include <functional>
+#include <limits>
 
 #endif // !INCLUDES_HPP

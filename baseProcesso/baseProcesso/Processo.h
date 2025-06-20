@@ -25,13 +25,13 @@ private:
 
 public:
     Processo(); // Construtor
-    Processo(int p, int prio,  std::string& n, int chegada, int execucaoCPU, int memoriaKB);
+    Processo(int p, int prio, string n, int chegada, int execucaoCPU, int memoriaKB);
 
     // Setters
     void setPID(int p);
     void setEstado(EstadoProcesso e);
     void setPrioridade(int prio);
-    void setNome( std::string& n);
+    void setNome(string& n);
     void setTempoChegada(int tc);
     void decrementarTempoRestanteCPU(int deltaTempo = 1);
 

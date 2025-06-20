@@ -129,17 +129,21 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Escalonador.cpp" />
+    <ClCompile Include="GerenciadorRecursos.cpp" />
     <ClCompile Include="Kernel.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Memoria.cpp" />
     <ClCompile Include="Processo.cpp" />
+    <ClCompile Include="Recurso.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Escalonador.h" />
+    <ClInclude Include="GerenciadorRecursos.h" />
     <ClInclude Include="Includes.h" />
     <ClInclude Include="Kernel.h" />
     <ClInclude Include="Memoria.h" />
     <ClInclude Include="Processo.h" />
+    <ClInclude Include="Recurso.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

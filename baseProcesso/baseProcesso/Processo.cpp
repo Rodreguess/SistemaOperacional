@@ -1,5 +1,4 @@
 #include "Processo.h"
-#include "Includes.h"
 
 Processo::Processo() :
     pid(0), estado(INSERIDO), prioridade(0), nome(""), tempoChegada(0),
@@ -7,7 +6,7 @@ Processo::Processo() :
 {
 }
 
-Processo::Processo(int p, int prio,  string& n, int chegada, int execucaoCPU, int memoriaKB) :
+Processo::Processo(int p, int prio,  string n, int chegada, int execucaoCPU, int memoriaKB) :
     pid(p), estado(INSERIDO), prioridade(prio), nome(n), tempoChegada(chegada),
     tempoExecucaoCPU(execucaoCPU), tempoRestanteCPU(execucaoCPU), tamanhoMemoriaKB(memoriaKB)
 {
