@@ -1,5 +1,5 @@
-🖥️ Sistema Operacional - Simulação em C++
-  Este projeto é uma simulação didática de um Sistema Operacional, desenvolvida em C++ com princípios de programação orientada a objetos. Ele visa demonstrar e aplicar conceitos fundamentais de um SO real de forma simplificada.
+ 🖥️ Sistema Operacional - Simulação em C++
+  - Este projeto é uma simulação didática de um Sistema Operacional, desenvolvida em C++ com princípios de programação orientada a objetos. Ele visa demonstrar e aplicar conceitos fundamentais de um SO real de forma simplificada.
 
 📚 Funcionalidades Principais
   - Gerenciamento de Processos: Criação de processos com atributos como ID, prioridade, tempo de CPU e consumo de memória.
