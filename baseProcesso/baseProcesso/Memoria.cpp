@@ -41,32 +41,31 @@ void Memoria::desalocar(int pid, int tamanhoKB) {
             << ". Memoria livre: " << memoriaLivreKB << "KB." << endl;
     }
     else {
-        // Isso pode acontecer se houver um erro na lógica do SO simulado
         cout << "Memoria: Tentativa de desalocar " << tamanhoKB << "KB do PID " << pid
             << ", mas nao estava alocado ou alocado menos que isso." << endl;
     }
 }
 
-int Memoria::getTamanhoTotalKB() const {
+int Memoria::getTamanhoTotalKB()  {
     return tamanhoTotalKB;
 }
 
-int Memoria::getMemoriaLivreKB() const {
+int Memoria::getMemoriaLivreKB()  {
     return memoriaLivreKB;
 }
 
-int Memoria::getMemoriaOcupadaKB() const {
+int Memoria::getMemoriaOcupadaKB()  {
     return tamanhoTotalKB - memoriaLivreKB;
 }
 
-void Memoria::imprimirStatus() const {
+void Memoria::imprimirStatus()  {
     cout << "\n--- Status da Memoria ---" << endl;
     cout << "Total: " << tamanhoTotalKB << "KB" << endl;
     cout << "Livre: " << memoriaLivreKB << "KB" << endl;
     cout << "Ocupada: " << getMemoriaOcupadaKB() << "KB" << endl;
     if (!alocacoesPorPID.empty()) {
         cout << "Alocacoes por PID:" << endl;
-        for (const auto& pair : alocacoesPorPID) {
+        for ( auto& pair : alocacoesPorPID) {
             cout << "  PID " << pair.first << ": " << pair.second << "KB" << endl;
         }
     }

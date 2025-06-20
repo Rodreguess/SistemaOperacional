@@ -18,10 +18,10 @@ private:
     EstadoProcesso estado;
     int prioridade;
     std::string nome;
-    int tempoChegada;       // Momento em que o processo "chegou" ao sistema
-    int tempoExecucaoCPU;   // Tempo total de CPU que o processo precisa
-    int tempoRestanteCPU;   // Tempo de CPU restante para o processo
-    int tamanhoMemoriaKB;   // Tamanho da memória em KB que o processo consome
+    int tempoChegada;      
+    int tempoExecucaoCPU;  
+    int tempoRestanteCPU;   
+    int tamanhoMemoriaKB;   
 
 public:
     Processo(); // Construtor
@@ -45,7 +45,7 @@ public:
     int getTempoRestanteCPU() ;
     int getTamanhoMemoriaKB() ;
 
-    bool isFinalizado() ; // Verifica se o processo finalizou sua execução de CPU
+    bool isFinalizado() ; // Verifica se o processo finalizou sua execução
 };
 
 #endif // PROCESSO_HPP

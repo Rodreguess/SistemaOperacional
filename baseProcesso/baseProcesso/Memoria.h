@@ -1,16 +1,14 @@
 #ifndef MEMORIA_HPP
 #define MEMORIA_HPP
+
 #include "Processo.h"
 #include "Escalonador.h"
-
 
 class Memoria {
 private:
     int tamanhoTotalKB;
     int memoriaLivreKB;
-    // Usaremos um mapa para registrar quanto de memória cada PID alocou
-   map<int, int> alocacoesPorPID;
-
+    map<int, int> alocacoesPorPID;
 public:
     Memoria(int totalKB);
 
@@ -21,12 +19,11 @@ public:
     void desalocar(int pid, int tamanhoKB);
 
     // Getters
-    int getTamanhoTotalKB() const;
-    int getMemoriaLivreKB() const;
-    int getMemoriaOcupadaKB() const;
+    int getTamanhoTotalKB();
+    int getMemoriaLivreKB();
+    int getMemoriaOcupadaKB();
 
-    // Opcional: imprimir o estado atual da memória
-    void imprimirStatus() const;
+    void imprimirStatus();
 };
 
 #endif // MEMORIA_HPP

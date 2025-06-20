@@ -83,9 +83,7 @@ vector<Processo> Escalonador::executarSimulacao(Memoria& memoria) {
     }
 
     cout << "\n--- Simulacao Concluida ---" << endl;
-    memoria.imprimirStatus(); // Imprime o status final da memória
-
-    // Retorna os processos finalizados (opcional, já que o escalonador os armazena)
+    memoria.imprimirStatus();
     return processosFinalizados;
 }
 

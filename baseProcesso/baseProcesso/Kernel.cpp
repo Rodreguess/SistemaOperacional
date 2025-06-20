@@ -1,20 +1,17 @@
-// Kernel.cpp
-
 #include "Kernel.h"
 #include "Includes.h"
 
 Kernel::Kernel(int tamanhoMemoriaTotalKB) :
     contador_pid(1),
-    memoria(tamanhoMemoriaTotalKB) // Inicializa a memória com o tamanho especificado
+    memoria(tamanhoMemoriaTotalKB)
 {
-    // O escalonador é inicializado por padrão
     cout << "Kernel inicializado." << endl;
 }
 
 // Cria um processo e tenta alocar memória para ele
 void Kernel::criarProcesso(int prioridade, int tempoCPU, int tamanhoMemoriaKB) {
     string nome_processo = "Processo_" + to_string(contador_pid);
-    Processo novo_processo(contador_pid, prioridade, nome_processo, 0, tempoCPU, tamanhoMemoriaKB); // Tempo de chegada 0 por enquanto
+    Processo novo_processo(contador_pid, prioridade, nome_processo, 0, tempoCPU, tamanhoMemoriaKB); // Tempo de chegada 0
 
     // Tenta alocar memória no momento da criação
     if (memoria.alocar(novo_processo.getPID(), novo_processo.getTamanhoMemoriaKB())) {
@@ -24,32 +21,28 @@ void Kernel::criarProcesso(int prioridade, int tempoCPU, int tamanhoMemoriaKB) {
             << ") criado e memoria alocada. Adicionado ao escalonador." << endl;
     }
     else {
-        novo_processo.setEstado(AGUARDANDO_MEMORIA); // Se não alocou, espera
-        // Adiciona a uma fila de espera por memória no escalonador (ou no próprio kernel)
-        // Por simplicidade, o escalonador tentará re-alocar na próxima rodada,
-        // então ainda o adicionamos ao escalonador que terá uma fila para isso.
-        escalonador.adicionarProcesso(novo_processo); // O escalonador pode ter uma lógica interna para isso
+        novo_processo.setEstado(AGUARDANDO_MEMORIA);
+        escalonador.adicionarProcesso(novo_processo);
         cerr << "Kernel: Processo " << novo_processo.getNome() << " (PID " << novo_processo.getPID()
             << ") criado, mas memoria NAO alocada. Aguardando memoria." << endl;
     }
-    processosCriados.push_back(novo_processo); // Mantém uma lista de todos os processos criados
+    processosCriados.push_back(novo_processo);
     contador_pid++;
 }
 
-// Inicia a simulação principal do sistema operacional
 void Kernel::iniciarSimulacao() {
     cout << "\n--- Iniciando simulacao do Sistema Operacional ---" << endl;
-    escalonador.executarSimulacao(memoria); // Passa a instância da memória para o escalonador
+    escalonador.executarSimulacao(memoria);
     cout << "\n--- Simulacao do Sistema Operacional Concluida ---" << endl;
     exibirStatusSO();
 }
 
 void Kernel::exibirProcessos(vector<Processo>& lista) {
-    for (Processo& meu_processo : lista) { // Usar const reference para evitar cópias desnecessárias
+    for (Processo& meu_processo : lista) {
         cout << "PID: " << meu_processo.getPID()
             << ", Nome: " << meu_processo.getNome()
             << ", Estado: ";
-        switch (meu_processo.getEstado()) { // Exemplo de como exibir o enum
+        switch (meu_processo.getEstado()) {
         case PRONTO: cout << "PRONTO"; break;
         case EXECUTANDO: cout << "EXECUTANDO"; break;
         case INSERIDO: cout << "INSERIDO"; break;
